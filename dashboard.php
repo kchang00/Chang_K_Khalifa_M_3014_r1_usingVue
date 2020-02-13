@@ -1,3 +1,12 @@
+<?php
+    // require_once 'load.php';
+    require_once 'config/database.php';
+    require_once 'admin/scripts/login.php';
+    require_once 'admin/signup.php';
+    require_once 'admin/scripts/functions.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +20,11 @@
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
     <script src="https://kit.fontawesome.com/cfa5b23a00.js" crossorigin="anonymous"></script>
-    <title>Roku | Welcome</title>
+    <title>Roku | Dashboard</title>
 </head>
 <body>
     <main id="app">
-        <?php include 'nav.php';?>
-        <router-view></router-view>
+        <h1>Welcome to the Dashboard</h1>
     </main>
     <script src="public/js/main.js" type="module"></script>
 </body>

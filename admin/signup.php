@@ -7,7 +7,8 @@
 
         if(!empty($username) && !empty($password)){
             //Login (login = function)
-            $message = login($username, $password, $reqtime);
+            // returning the value of the login function
+            $message = '<p class="echoM">'.login($username, $password, $reqtime).'</p>';
         }else{
             $message = '<p class="echoM">Please fill out the required fields</p>';
         }
