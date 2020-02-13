@@ -1,7 +1,7 @@
 <?php
-    require_once './includes/config/database.php';
-    require_once './includes/admin/scripts/login.php';
-    require_once './includes/admin/signup.php';
+    require_once './config/database.php';
+    require_once './admin/scripts/login.php';
+    require_once './admin/signup.php';
 ?>
 
 
