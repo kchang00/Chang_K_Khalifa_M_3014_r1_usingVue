@@ -8,6 +8,8 @@ class Database
 
     private $username = "root";
 
+    // for windows, $password = ""
+    // for mac, $password = "root"
     private $password = "root";
 
     private static $instance = null;

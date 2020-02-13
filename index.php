@@ -1,7 +1,9 @@
 <?php
-    require_once './config/database.php';
-    require_once './admin/scripts/login.php';
-    require_once './admin/signup.php';
+    // require_once 'load.php';
+    require_once 'config/database.php';
+    require_once 'admin/scripts/login.php';
+    require_once 'admin/signup.php';
+    require_once 'admin/scripts/functions.php';
 ?>
 
 
@@ -22,6 +24,9 @@
 </head>
 <body>
     <main id="app">
+        <?php include 'templates/nav.php';?>
+        <!-- echoing value of $message in signup.php -->
+        <?php echo !empty($message)?$message: ''; ?>
         <router-view></router-view>
     </main>
     <script src="public/js/main.js" type="module"></script>
